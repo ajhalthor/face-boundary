@@ -1,7 +1,5 @@
 # Face-Boundary
 
-## About 
-
 This program takes an image as input and plots:
 1. Tip of Nose
 2. Boundary of the Face
@@ -20,7 +18,7 @@ The results are quite good for the simple approach, but not perfect. You may obt
 
 Once the boundary is plotted, we find points at intervals of 2 degrees about the tip of the nose onto the boundary of the face. The tip of nose is determined as the midpoint of the Nose boundary plotted by the `CascadeObjectDetector` towards the beginning `[nx, ny]`.
 
-## Plotting 90 lines at 2 degrees from each
+## Plotting 90 lines at 2 degrees from each other
 
 Consider a line making an angle `theta` degrees with the X-axis. This line should pass though the tip of nose `[nx, ny]`.
 
@@ -83,7 +81,7 @@ end;
 
 ```
 
-## Sample Images
+## Sample Output Boundaries
 
 ![Sample 1](/images/marked_photo_1.jpg)
 
